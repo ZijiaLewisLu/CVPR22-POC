@@ -1,0 +1,44 @@
+save_every: 10000
+print_every: 2000
+
+dataset:
+  name: crosstask
+  split: 1
+
+train: 
+  batch_size: 5
+  optimizer: SGD
+  epoch: 800
+  lr: 0.02
+  momentum: 0.009
+  weight_decay: 0.0
+  clip_grad_norm: 10.0
+
+wavenet: 
+  input_size: 3200
+  hidden_size: 128
+  pooling_levels: "[]"
+
+
+thres:
+  w: 0.5
+  hidden_size: 64
+
+poc_loss:
+  w: 0.1
+  use_gt: False
+
+att_len_loss:
+  w: 0.5
+  min: 3.333f
+  max: 1.25f
+
+att_smooth_loss:
+  w: 0.0
+
+centering_loss:
+  w: 1.0
+
+att_ranking_loss:
+  w: 0.5
+  nstable: True

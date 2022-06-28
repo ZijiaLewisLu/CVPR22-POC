@@ -1,0 +1,41 @@
+save_every: 10000
+print_every: 2000
+
+dataset:
+  name: breakfast
+  split: 1
+
+train: 
+  batch_size: 2
+  optimizer: SGD
+  epoch: 250
+  lr: 0.02
+  momentum: 0.009
+  weight_decay: 0.0
+  clip_grad_norm: 10.0
+
+wavenet: 
+  input_size: 2048
+  hidden_size: 128
+
+thres:
+  w: 0.5
+  hidden_size: 64
+
+poc_loss:
+  w: 0.1
+  use_gt: False
+
+att_len_loss:
+  w: 0.5
+  min: 100a
+  max: ""
+
+att_smooth_loss:
+  w: 0.0
+
+centering_loss:
+  w: 1.0
+
+att_ranking_loss:
+  w: 0.5

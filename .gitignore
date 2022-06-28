@@ -1,0 +1,7 @@
+*.pyc
+*.json
+*.csv
+dataset/
+log/
+*.sh
+*.ipynb
