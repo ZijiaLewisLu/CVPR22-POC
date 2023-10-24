@@ -394,7 +394,7 @@ class AttentionNetwork(nn.Module):
                 for j in range(i+1, C):
                     ai, aj = actions[i], actions[j]
                     error = 1 - true_order_score[(ai, aj)] * O[ai, aj] \
-                                - true_order_score[(aj, ai)] * O[aj, aj]
+                                - true_order_score[(aj, ai)] * O[aj, ai]
                     
                     order_loss += error
                     npairs += 1
