@@ -1,4 +1,4 @@
-# CVPR22-POC
+# [CVPR22-POC](https://openaccess.thecvf.com/content/CVPR2022/papers/Lu_Set-Supervised_Action_Learning_in_Procedural_Task_Videos_via_Pairwise_Order_CVPR_2022_paper.pdf)
 This is the official code for our CVPR 2022 paper "**Set-Supervised Action Learning in Procedural Task Videos via Pairwise Order Consistency**".
 
 ![schematic](schematic.png)
